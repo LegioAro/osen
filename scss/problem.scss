@@ -1,0 +1,134 @@
+.problem {
+    color: #000000;
+    margin-bottom: 100px;
+    margin-bottom: calc(50px + (100 - 50) * ((100vw - 320px) / (1900 - 320)));
+    overflow: hidden;
+    &__wrapper {
+    }
+
+    &__text {
+        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1900 - 320)));
+        text-align: center;
+    }
+
+    &__info-wrapper {
+        display: flex;
+        margin: 40px 0 50px;
+    }
+
+    &__info {
+        background: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        width: 100%;
+        max-width: 66%;
+        padding: 55px 45px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 66px;
+        grid-row-gap: 50px;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info-item-img {
+        width: 100%;
+        max-width: 80px;
+        height: 80px;
+        margin-right: 20px;
+    }
+
+    &__info-item-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 145%;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        z-index: 1;
+        top: 2px;
+        right: -90%;
+        width: 690px;
+        height: 450px;
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .title {
+        margin-bottom: 30px;
+    }
+    .btn {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .problem {
+        &__img {
+            right: -85%;
+            width: 650px;
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .problem {
+        &__img {
+            right: -70%;
+            width: 600px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .problem {
+        &__img {
+            right: -75%;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .problem {
+        &__info {
+            max-width: 100%;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .problem {
+        &__info {
+            padding: 30px 20px;
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+        }
+        .btn {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .problem {
+        &__info {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

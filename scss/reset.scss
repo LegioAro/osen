@@ -1,0 +1,63 @@
+html,
+body,
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.fancybox__content > .carousel__button.is-close {
+    top: -50px !important;
+    right: -160px !important;
+    transform: scale(1.2);
+}
+@media (max-width: 850px) {
+    .fancybox__content > .carousel__button.is-close {
+        right: -90px !important;
+    }
+}
+@media (max-width: 700px) {
+    .fancybox__content > .carousel__button.is-close {
+        right: -40px !important;
+    }
+}
+@media (max-width: 650px) {
+    .fancybox__content > .carousel__button.is-close {
+        right: 10px !important;
+        top: -40px !important;
+    }
+    .fancybox__slide {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,140 @@
+.can {
+    background-image: url(../img/can_bg.png);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 110px 0;
+    padding-top: calc(50px + (110 - 50) * ((100vw - 320px) / (1900 - 320)));
+
+    &__wrapper {
+        padding: 0 30px;
+    }
+
+    &__items {
+        margin-top: 100px;
+        margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1900 - 320)));
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 95px;
+        grid-row-gap: 50px;
+        position: relative;
+    }
+
+    &__item {
+        position: relative;
+        border-radius: 20px;
+        padding: 34px 28px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            background: #ffffff;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(88.76deg, #ff2c2c 0%, #eeb15c 91.51%);
+            top: -25px;
+            right: -25px;
+            border-radius: 50%;
+        }
+    }
+
+    &__item-title {
+        font-weight: 800;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    &__item-text {
+        font-size: 14px;
+        line-height: 165%;
+    }
+
+    /* Точки (булиты) */
+    .slick-dots {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+    }
+    .slick-dots li {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        position: relative;
+        transition: 0.3s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            background: #ffffff;
+            opacity: 0.1;
+        }
+    }
+    /* Активная точка */
+    .slick-dots li.slick-active {
+        background: linear-gradient(88.76deg, #ff2c2c 0%, #eeb15c 91.51%);
+    }
+    /* Элемент точки */
+    .slick-dots li button {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .can {
+        &__items {
+            grid-column-gap: 40px;
+            grid-row-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .can {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .can {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item {
+            margin: 25px 25px 0 2px;
+        }
+        &__wrapper {
+            padding: 0 2px;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.problem {
+  color: #000000;
+  margin-bottom: 100px;
+  margin-bottom: calc(50px + (100 - 50) * ((100vw - 320px) / (1900 - 320)));
+  overflow: hidden;
+}
+
+.problem__text {
+  font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1900 - 320)));
+  text-align: center;
+}
+
+.problem__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0 50px;
+}
+
+.problem__info {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 66%;
+  padding: 55px 45px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-column-gap: 66px;
+  grid-row-gap: 50px;
+  position: relative;
+  z-index: 3;
+}
+
+.problem__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.problem__info-item-img {
+  width: 100%;
+  max-width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.problem__info-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+}
+
+.problem__info-item-text span {
+  font-weight: 600;
+}
+
+.problem__img {
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  right: -90%;
+  width: 690px;
+  height: 450px;
+}
+
+.problem__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.problem .title {
+  margin-bottom: 30px;
+}
+
+.problem .btn {
+  margin-top: 50px;
+}
+
+@media (max-width: 1400px) {
+  .problem__img {
+    right: -85%;
+    width: 650px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .problem__img {
+    right: -70%;
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .problem__img {
+    right: -75%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .problem__info {
+    max-width: 100%;
+  }
+  .problem__img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .problem__info {
+    padding: 30px 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
+  .problem .btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .problem__info {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=problem.css.map */
