@@ -178,6 +178,7 @@ ol {
   background-image: linear-gradient(88.76deg, #ff2c2c 0%, #eeb15c 91.51%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-color: #fff;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -187,7 +188,6 @@ ol {
   font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1900 - 320)));
   text-transform: lowercase;
   margin-left: 5px;
-  display: inline;
 }
 
 .cover__body-info-sum div {
@@ -352,11 +352,12 @@ ol {
   }
   .cover__video-big {
     position: relative;
-    width: calc(100% - 10px);
+    width: 100%;
     height: auto;
     margin-left: 10px;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    margin-bottom: 70px;
   }
   .cover__body-info-sum {
     -webkit-box-pack: center;
@@ -1708,6 +1709,7 @@ ol {
 .form {
   width: 100%;
   max-width: 500px;
+  min-height: 610px;
   text-align: center;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);

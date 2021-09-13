@@ -94,18 +94,14 @@
 }
 
 .cover__body-info-sum p {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline;
   font-weight: 800;
   font-size: 20px;
 }
 
 .cover__body-info-sum span {
   text-transform: uppercase;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline;
   padding: 0 10px;
   font-weight: 800;
   font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1900 - 320)));
@@ -286,11 +282,12 @@
   }
   .cover__video-big {
     position: relative;
-    width: calc(100% - 10px);
+    width: 100%;
     height: auto;
     margin-left: 10px;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    margin-bottom: 70px;
   }
   .cover__body-info-sum {
     -webkit-box-pack: center;
