@@ -173,9 +173,7 @@ ol {
 
 .cover__body-info-sum span {
   text-transform: uppercase;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline;
   padding: 0 10px;
   font-weight: 800;
   font-size: calc(22px + (40 - 22) * ((100vw - 320px) / (1900 - 320)));
