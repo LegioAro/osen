@@ -150,6 +150,11 @@
           justify-content: center;
 }
 
+.cover__body-info-sum div span {
+  position: relative;
+  z-index: 3;
+}
+
 .cover__decor {
   position: absolute;
   top: 0;
@@ -329,4 +334,3 @@
     font-size: 30px;
   }
 }
-/*# sourceMappingURL=cover.css.map */
