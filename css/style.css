@@ -164,9 +164,7 @@ ol {
 }
 
 .cover__body-info-sum p {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline;
   font-weight: 800;
   font-size: 20px;
 }
