@@ -123,6 +123,10 @@
                 width: 100%;
                 justify-content: center;
             }
+            span {
+                position: relative;
+                z-index: 3;
+            }
         }
     }
 
