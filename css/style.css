@@ -187,6 +187,7 @@ ol {
   font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1900 - 320)));
   text-transform: lowercase;
   margin-left: 5px;
+  display: inline;
 }
 
 .cover__body-info-sum div {
